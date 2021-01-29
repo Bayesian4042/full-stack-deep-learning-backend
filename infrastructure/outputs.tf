@@ -1,5 +1,5 @@
 output "fsdl_bucket_name" {
-  value = aws_s3_bucket.fsdl_bucket.id
+  value = aws_s3_bucket.fsdl_bucket_backend.id
 }
 
 output "cloudfront_distribution_id" {
