@@ -4,7 +4,7 @@ version: 2.1
 executors:
   app-executor:
     docker:
-      - image: python:3.6-alpine
+      - image:  python:3.7.9-alpine3.12
     working_directory: ~/repo
   slack-executor:
     docker:
