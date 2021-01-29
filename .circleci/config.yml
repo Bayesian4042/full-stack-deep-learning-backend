@@ -29,6 +29,7 @@ aliases:
     run:
       name: Install dependencies
       command: |
+        mkdir -p artifacts
         python3 -m venv fsdl
         . fsdl/bin/activate
         pip install --upgrade pip
