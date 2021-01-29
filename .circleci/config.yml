@@ -31,7 +31,8 @@ aliases:
       command: |
         python3 -m venv fsdl
         . fsdl/bin/activate
-        pip install -r requirements.txt
+        pip install --upgrade pip
+#        pip install -r requirements.txt
 
   - &install-aws-cli
     run:
