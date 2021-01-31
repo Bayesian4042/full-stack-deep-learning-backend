@@ -16,7 +16,10 @@ jobs:
             - app-
       - run:
           name: Install dependencies
-          command: pip install -r requirements.txt
+          command: |
+            python3 -m venv fsdl
+            . fsdl/bin/activate
+            pip install -r requirements.txt
       - save_cache:
           paths:
             - node_modules
